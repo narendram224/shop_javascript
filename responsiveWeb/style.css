@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.Navbar {
+    background-color: #46ACC2;
+    display: flex;
+    padding: 0.3rem 1rem 0rem 1rem;
+    font-family: sans-serif;
+    color: white;
+  }
+  .Navbar__Items{
+    display:flex;
+   
+  }
+  
+  .Navbar__Link {
+    padding-right:0.4rem;
+  }
+  .Navbar__Items--right {
+    margin-left:auto;
+  }
+  .Navbar__Link-toggle {
+    display: none;
+  }
+  .Navbar__Link-brand{
+      width: fit-content;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+    
+    }
+    .Navbar__Items {
+        display:none;
+       
+        
+      }
+    .Navbar__Items--right {
+      margin-left: 0;
+     
+    }
+    .Navbar__ToggleShow {
+        display: flex;
+        animation: fadeOut 2s;
+       
+      }
+        
+    .Navbar__Link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+        transform: rotate(90deg);
+        animation: fadeOut 4s;
+        
+       } 
+       @keyframes fadeOut {
+        0%   { display: none;
+            opacity: 0; }
+        100% { display: flex;
+        opacity: 1; }
+      }
+  } 

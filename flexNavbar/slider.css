@@ -1,0 +1,33 @@
+body{
+    background: #f5f5f5;
+    margin: 0;
+
+}
+figure{
+    background: white !important;
+    display: block;
+    margin: 0.5em;
+    padding: 0.7ems;
+    /* width: 160px !important; */
+    box-shadow: 0px 1px 1px 0px rgba(171, 169, 169, 0.1);
+    border: 1px solid #edeef0;
+    border-radius: 8px;
+}
+blockquote{
+    padding: 0.5em;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}
+blockquote img{
+    width: 75%;
+}
+figcaption{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: grey;
+}

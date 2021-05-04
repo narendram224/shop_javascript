@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.mainSection{
+    background-color: indianred;
+    padding: 1em;
+    height: 100vh;
+}
+.mainSection .container{
+        background-color: indigo;
+        padding: 1em;
+        height: 97%;
+        display: flex;
+       
+}
+.mainSection .container .item{
+    background-color: royalblue;
+    padding: 1em;
+    margin: 1em;
+}
+.mainSection .bg1{
+    background-color: seagreen !important;
+}
+.mainSection .bg2{
+    background-color: tan !important;
+}
+
+.mainSection .bg3{
+    background-color: brown !important;
+}

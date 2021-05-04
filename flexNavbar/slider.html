@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlidDocument0Documenter</title>
+    <link rel="stylesheet" href="slider.css"> 
+    <link rel="stylesheet" href="./glider.min.css">
+</head>
+<style>
+   
+</style>
+<body>
+    <div class="glider-contain multiple">
+          <button aria-label="Previous" class="glider-prev">«</button>
+        <div class="glider">
+            <figure>
+                <blockquote> 
+                <img src="https://www.netmeds.com/images/category/665/thumb/devices_0.jpg" alt="" srcset="">
+                </blockquote>
+                <figcaption> product care </figcaption>
+            </figure>
+            <figure>
+                <blockquote> 
+                  <img src="https://www.netmeds.com/images/category/482/thumb/ayurvedic_0.jpg" alt="" srcset="">
+                   </blockquote>
+                <figcaption> ayurvedic </figcaption>
+            </figure>
+            <figure>
+                <blockquote>  
+                <img src="https://www.netmeds.com/images/category/500/thumb/fitness_0.jpg" alt="" srcset="">  
+                </blockquote>
+                <figcaption> fitness care </figcaption>
+            </figure>
+            <figure>
+                <blockquote> <img src="https://www.netmeds.com/images/category/524/thumb/personal_care_0.jpg" alt="" srcset=""></blockquote>
+                <figcaption> hair Care </figcaption>
+            </figure>
+            <figure>
+              <blockquote>
+                <img src="https://www.netmeds.com/images/category/524/thumb/personal_care_0.jpg" alt="" srcset="">
+                <figcaption>Life Style</figcaption>
+              </blockquote>
+            </figure>
+            <figure>
+                <blockquote>  <img src="https://www.netmeds.com/images/category/600/thumb/lifestyle_0.jpg" alt="" srcset=""> </blockquote>
+                <figcaption> treatment  </figcaption>
+            </figure>
+        </div>
+        <button aria-label="Next" class="glider-next">»</button>
+        <div  id="dots" class="glider-dots"></div>
+    </div>
+    <script src="./glider.js"></script>
+    <script>
+           new Glider(document.querySelector('.glider'), {
+            slidesToShow: 1.5,
+            dots: '#dots',
+  draggable: true,
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  },
+  responsive: [
+  {
+      // screens greater than >= 300px
+      breakpoint: 300,
+      settings: {
+        slidesToShow: '2.5',
+        slidesToScroll: '2',
+        itemWidth: 140,
+        duration: 0.25
+      }
+    },
+  {
+      // screens greater than >= 400px
+      breakpoint: 400,
+      settings: {
+        slidesToShow: 'auto',
+        slidesToScroll: 'auto',
+        itemWidth: 110,
+        duration: 0.25
+      }
+    },
+    {
+      // screens greater than >= 775px
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 'auto',
+        slidesToScroll: 'auto',
+        itemWidth: 150,
+        duration: 0.25
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    }
+  ]
+});
+    </script>
+</body>
+</html>
